@@ -14,7 +14,7 @@ model User {
   id             String        @id @default(auto()) @map("_id") @db.ObjectId
   name           String?
   email          String?       @unique
-  role           String        @default("user")
+  role           String        @default("user") //User | Admin | landlord | Seller
   emailVerified  DateTime?
   image          String?
   hashedPassword String?
@@ -56,9 +56,9 @@ model Listing {
   bathroomCount Int
   guestCount    Int
   locationValue String
-  type          String
-  adress        String
-  city          String
+  type          String? // rent | sell
+  adresse       String?
+  city          String?
   userId        String   @db.ObjectId
   price         Int
 

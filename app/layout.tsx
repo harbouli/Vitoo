@@ -1,30 +1,33 @@
-import { Nunito } from 'next/font/google'
+import { Nunito } from "next/font/google";
 
-import Navbar from '@/app/components/navbar/Navbar';
-import LoginModal from '@/app/components/modals/LoginModal';
-import RegisterModal from '@/app/components/modals/RegisterModal';
-import SearchModal from '@/app/components/modals/SearchModal';
-import RentModal from '@/app/components/modals/RentModal';
+import Navbar from "@/app/components/navbar/Navbar";
+import LoginModal from "@/app/components/modals/LoginModal";
+import RegisterModal from "@/app/components/modals/RegisterModal";
+import SearchModal from "@/app/components/modals/SearchModal";
+import RentModal from "@/app/components/modals/RentModal";
 
-import ToasterProvider from '@/app/providers/ToasterProvider';
+import ToasterProvider from "@/app/providers/ToasterProvider";
 
-import './globals.css'
-import ClientOnly from './components/ClientOnly';
-import getCurrentUser from './actions/getCurrentUser';
+import "./globals.css";
+import ClientOnly from "./components/ClientOnly";
+import getCurrentUser from "./actions/getCurrentUser";
+import Head from "next/head";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb Clone',
-}
+export const metadata: Metadata = {
+  title: "Vitoo",
+  description: "Vitoo booking buy your house",
+  icons: { icon: "favicon.svg" },
+};
 
-const font = Nunito({ 
-  subsets: ['latin'], 
+const font = Nunito({
+  subsets: ["latin"],
 });
 
 export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   const currentUser = await getCurrentUser();
 
@@ -39,10 +42,8 @@ export default async function RootLayout({
           <RentModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className="pb-20 pt-28">
-          {children}
-        </div>
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
-  )
+  );
 }
