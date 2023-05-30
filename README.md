@@ -3,6 +3,8 @@
 Vitoo
 Welcome to the Airbnb Application repository! This is a web application built using Next.js, MongoDB, and Prisma, designed to provide users with a platform to book and reserve accommodations.
 
+![Vitoo Website ](https://cdn.sanity.io/images/pnfdzjxa/production/85e75eb3957f0f256c813bfd69448ca578cb59fa-3500x2300.jpg)
+
 ## Features
 
 - User-friendly interface for browsing and booking accommodations.
