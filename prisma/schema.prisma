@@ -56,9 +56,9 @@ model Listing {
   bathroomCount Int
   guestCount    Int
   locationValue String
-  type          String? // rent | sell
-  adresse       String?
-  city          String?
+  // type          String? // rent | sell
+  // adresse       String?
+  // city          String?
   userId        String   @db.ObjectId
   price         Int
 
