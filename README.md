@@ -60,5 +60,3 @@ Airbnb Clone Application Tutorial. (2023): https://www.youtube.com/watch?v=c_-b_
 If you have any questions, suggestions, or just want to connect, feel free to reach out. You can contact me at [harbouli.me@gmail.com].
 
 Happy booking!
-
-teturia:https://www.youtube.com/watch?v=c_-b_isI4vg&t=3s
