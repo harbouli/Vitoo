@@ -1,55 +1,39 @@
-# Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
+# Full Stack Vitoo with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
 
-This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth.
+Vitoo
+Welcome to the Airbnb Application repository! This is a web application built using Next.js, MongoDB, and Prisma, designed to provide users with a platform to book and reserve accommodations.
 
-Features:
+## Features
 
-- Tailwind design
-- Tailwind animations and effects
-- Full responsiveness
-- Credential authentication
-- Google authentication
-- Github authentication
-- Image upload using Cloudinary CDN
-- Client form validation and handling using react-hook-form
-- Server error handling using react-toast
-- Calendars with react-date-range
-- Page loading state
-- Page empty state
-- Booking / Reservation system
-- Guest reservation cancellation
-- Owner reservation cancellation
-- Creation and deletion of properties
-- Pricing calculation
-- Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms
-  - For example we will filter out properties that have a reservation in your desired date range to travel
-- Favorites system
-- Shareable URL filters
-  - Lets say you select a category, location and date range, you will be able to share URL with a logged out friend in another browser and they will see the same results
-- How to write POST and DELETE routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle files like error.tsx and loading.tsx which are new Next 13 templating files to unify loading and error handling
-- How to handle relations between Server and Child components!
+- User-friendly interface for browsing and booking accommodations.
+- Robust search functionality with filters for location, price range, amenities, and more.
+- Detailed accommodation listings with high-quality images, descriptions, and availability calendars.
+- Secure authentication.
+- Integration with MongoDB to store and manage accommodation data.
+- Integration with Prisma as the ORM (Object Relational Mapping) for database operations.
 
 ### Prerequisites
 
 **Node version 14.x**
 
-### Install packages
+## Installation
 
-```shell
-npm i
+To get started with the Airbnb Application locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git https://github.com/harbouli/Vitoo.git
 ```
 
 ### Setup .env file
 
 ```js
 DATABASE_URL=
+NEXTAUTH_SECRET=
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_SECRET=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 ```
 
 ### Setup Prisma
@@ -65,10 +49,16 @@ npx prisma db push
 npm run dev
 ```
 
-## Available commands
+## Reference
 
-Running commands with npm `npm run [command]`
+You can also check out this YouTube tutorial that provides a step-by-step guide on building a similar application:
 
-| command | description                              |
-| :------ | :--------------------------------------- |
-| `dev`   | Starts a development instance of the app |
+Airbnb Clone Application Tutorial. (2023): https://www.youtube.com/watch?v=c_-b_isI4vg&t=3s
+
+## Contact
+
+If you have any questions, suggestions, or just want to connect, feel free to reach out. You can contact me at [harbouli.me@gmail.com].
+
+Happy booking!
+
+teturia:https://www.youtube.com/watch?v=c_-b_isI4vg&t=3s
